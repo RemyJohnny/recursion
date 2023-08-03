@@ -1,5 +1,4 @@
 /* eslint-disable no-plusplus */
-const ARRAY = [6, 2, 9, 4, 1, 8, 3, 5, 7, 0];
 
 function merge(leftHalf, rightHalf) {
   const output = [];
@@ -40,5 +39,5 @@ function mergeSort(arr) {
 
   return merge(mergeSort(leftHalf), mergeSort(rightHalf));
 }
-console.log(mergeSort(ARRAY)); // [0,1,2,3,4,5,6,7,8,9]
-console.log(mergeSort([]));
+console.log(mergeSort([6, 2, 9, 4, 1, 8, 3, 5, 7, 0])); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(mergeSort(["D", "A", "C", "B"])); // [ 'A', 'B', 'C', 'D' ]
